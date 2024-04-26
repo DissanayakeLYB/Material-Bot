@@ -41,7 +41,7 @@ submit = st.button("Submit", key = "Enter")
 # response
 if submit:
     wiki_research = wiki.run(prompt)
-    response = respond_chain.run(topic=prompt , wikipedia_research =wiki_research)
+    response = respond_chain.run(topic=prompt , wikipedia_research = wiki_research)
 
     st.write(response) 
 
